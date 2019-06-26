@@ -1,0 +1,16 @@
+Configuration:
+  status: INFO
+
+  Appenders:
+    Console:  #输出到控制台
+      name: CONSOLE
+      target: SYSTEM_OUT
+      PatternLayout:
+        pattern: ${log.pattern}
+
+  Loggers:
+    Logger:
+      - name: io.demor
+        level: debug
+        AppenderRef:
+          - ref: CONSOLE

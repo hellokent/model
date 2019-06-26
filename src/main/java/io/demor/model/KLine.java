@@ -16,6 +16,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class KLine {
 
+    private String name;
+
     private String date;
 
     private double min;
